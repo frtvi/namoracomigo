@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <div class="container">
+        <h1>Quer namorar comigo?</h1>
+        <div class="buttons">
+          <button onclick="parabens()"class="yes">Sim</button>
+          <button class="no">Não</button>
+        </div>
+      </div>
+
+
+<style type="text/css">
+.container {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.no {
+  background-color: lightgray;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: relative;
+  transition: all 0.35s ease-in-out;
+}
+
+.no:hover {
+  cursor: pointer;
+  left: 10px;
+}
+</style>
+
+
+        <script type="text/javascript">
+            const noButton = document.querySelector(".no");
+            noButton.addEventListener("mouseover", function () {
+            this.style.left = (Math.random() * window.innerWidth - this.offsetWidth) + "px";
+            });
+
+        function parabens(){
+            var escolha = ("Que bom que fez a escolha certa!")
+            alert (escolha)
+        }
+        </script>
+
+
+</head>
+<body>
+
+</body>
+
+
+
+</html>
